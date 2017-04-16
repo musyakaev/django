@@ -1,0 +1,12 @@
+{% load staticfiles %}
+<html lang="en">
+<head>
+    <link href="{% static "bootstrap/css/bootstrap.css" %}" rel="stylesheet"/>
+</head>
+<body>
+    {% block content %}
+        <hl class="text-info">Привет {{name}}</hl>
+    {% endblock %}
+    <script src="{% static "bootstrap/js/bootstrap.js" %}"></script>
+</body>
+</html>
